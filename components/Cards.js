@@ -30,8 +30,12 @@ axios
     articles.forEach(article => {
         cardsContainer.appendChild(cardMaker(article))
         
-    });
+    })
 })
+.catch(e=>{
+    return `There has been an error: ${e}`
+});
+
 
 function cardMaker(article){
     //create
