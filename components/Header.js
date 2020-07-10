@@ -27,7 +27,7 @@ function Header() {
     //add text
     date.textContent = 'MARCH 28, 2020'
     title.textContent = 'Lambda Times'
-    temp.textContent = '98'
+    temp.innerHTML = '98 &#176'
     
     //append
     header.appendChild(date)

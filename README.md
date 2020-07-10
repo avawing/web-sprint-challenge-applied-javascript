@@ -27,14 +27,27 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+The DOM is the thing that we see.
+Document Object Model
 
 2. What is an event?
+It is a thing occuring within the DOM.
+A click, a resize, hover.... etc.
 
 3. What is an event listener?
+It is a SPY!!!!!
+It is something specifically paying attention to a specific event.
+AND THEN REPORTING IT TO THE STAZI!!
+
+and causing an effect.
 
 4. Why would we convert a NodeList into an Array?
+You can't dostuff to a NodeList.
+You need your NodeList to be an Array in order to doStuff.
+(forEach, map, createHat etc.)
 
 5. What is a component?
+It's a function that creates a reusable element of the website.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
