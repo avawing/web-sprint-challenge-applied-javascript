@@ -33,7 +33,7 @@ axios
     })
 })
 .catch(e=>{
-    return `There has been an error: ${e}`
+    throw `There has been an error: ${e}`
 });
 
 

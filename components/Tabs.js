@@ -29,4 +29,4 @@ axios
 
     
 })
-.catch(e => {return `This is an error ${e}`});
+.catch(e => {throw `This is an error ${e}`});
