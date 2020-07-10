@@ -9,7 +9,7 @@
 //    <div class="tab">topic here</div>
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
-
+const errorContainer = document.querySelector('.errors-container')
 
 const topics = document.querySelector('.topics')
 
@@ -29,4 +29,9 @@ axios
 
     
 })
-.catch(e => {throw `This is an error ${e}`});
+.catch(e=>{
+    let errorMessage = document.createElement('p')
+    errorMessage.textContent = `You have recieved error ${e}`
+
+    errorContainer.appendChild(errorMessage)
+});

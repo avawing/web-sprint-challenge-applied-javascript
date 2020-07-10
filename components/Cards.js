@@ -22,6 +22,7 @@
 //
 // Use your function to create a card for each of the articles, and append each card to the DOM.
 const cardsContainer = document.querySelector('.cards-container')
+const errorContainer = document.querySelector('.errors-container')
 
 axios
 .get(`https://lambda-times-backend.herokuapp.com/articles`)
@@ -33,7 +34,10 @@ axios
     })
 })
 .catch(e=>{
-    throw `There has been an error: ${e}`
+    let errorMessage = document.createElement('p')
+    errorMessage.textContent = `You have recieved error ${e}`
+
+    errorContainer.appendChild(errorMessage)
 });
 
 
